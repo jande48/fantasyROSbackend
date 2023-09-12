@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_crontab',
     'rankings'
 ]
 
@@ -82,7 +83,14 @@ DATABASES = {
     }
 }
 
-
+CRONJOBS = [
+    (
+        "0 */6 * * *",
+        "rankings.tasks.updateAllRankings",
+        [],
+        {},
+    ),
+]
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

@@ -35,9 +35,9 @@ def updateRankings(URL, league_scoring_type):
             player_obj.player_yahoo_id = p["player_yahoo_id"]
             player_obj.player_bye_week = p["player_bye_week"]
             player_obj.save()
-        print('updated PPR rankings')
+        print(f"updated {league_scoring_type} rankings")
 
-def updateRankings():
+def updateAllRankings():
     ppr_url = "https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php"
     updateRankings(ppr_url,'ppr')
     half_url = "https://www.fantasypros.com/nfl/rankings/ros-half-point-ppr-overall.php"
