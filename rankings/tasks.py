@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re, json
 import urllib.request
 from rankings.models import PlayerRank
-
+from rankings.utils import getPlayerData
 
 def updateRankings(URL, league_scoring_type):
     with urllib.request.urlopen(URL) as web:
@@ -24,7 +24,7 @@ def updateRankings(URL, league_scoring_type):
         except Exception as e:
             print('problem',e)
             return
-        
+        sleeper_player_data = getPlayerData()
         for i,p in enumerate(data["players"]):
             player_obj, created = PlayerRank.objects.get_or_create(fantasy_pros_id=p['player_id'],league_scoring_type=league_scoring_type,source='fantasy_pros')
             player_obj.rank = i+1
@@ -34,6 +34,13 @@ def updateRankings(URL, league_scoring_type):
             player_obj.player_image = p["player_image_url"]
             player_obj.player_yahoo_id = p["player_yahoo_id"]
             player_obj.player_bye_week = p["player_bye_week"]
+            for key in sleeper_player_data.keys():
+                try:
+                    yahoo_id = str(sleeper_player_data[key]["yahoo_id"])
+                except:
+                    continue
+                if p["player_yahoo_id"] == yahoo_id:
+                    player_obj.sleeper_id = yahoo_id
             player_obj.save()
         print(f"updated {league_scoring_type} rankings")
 

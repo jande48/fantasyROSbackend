@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from rankings.models import PlayerRank
 
+
 class PlayerRankSerializer(serializers.ModelSerializer):
     # name = serializers.SerializerMethodField("get_name")
     # def get_name(self, obj=None):
@@ -27,4 +28,5 @@ class PlayerRankSerializer(serializers.ModelSerializer):
             "last_name",
             "player_position",
             "player_image",
+            "sleeper_id",
         ]
