@@ -29,4 +29,5 @@ class PlayerRankSerializer(serializers.ModelSerializer):
             "player_position",
             "player_image",
             "sleeper_id",
+            "player_yahoo_id"
         ]

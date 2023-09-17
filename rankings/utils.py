@@ -766,7 +766,7 @@ def getPlayerData():
       "first_name":"Riley",
       "search_full_name":"rileypatters on",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33781,
       "position":"K",
       "team":"DET"
    },
@@ -2115,7 +2115,7 @@ def getPlayerData():
       "first_name":"Javonte",
       "search_full_name":"javontewilliams",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33423,
       "position":"RB",
       "team":"DEN"
    },
@@ -4399,7 +4399,7 @@ def getPlayerData():
       "first_name":"Breece",
       "search_full_name":"breecehall",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33991,
       "position":"RB",
       "team":"NYJ"
    },
@@ -6423,7 +6423,7 @@ def getPlayerData():
       "first_name":"Jordan",
       "search_full_name":"jordanaddison",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40042,
       "position":"WR",
       "team":"M IN"
    },
@@ -8678,7 +8678,7 @@ def getPlayerData():
       "first_name":"Deuce",
       "search_full_name":"deucevaughn",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40240,
       "position":"RB",
       "team":"DAL"
    },
@@ -8986,7 +8986,7 @@ def getPlayerData():
       "first_name":"Mac",
       "search_full_name":"macjones",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33403,
       "position":"QB",
       "team":"NE"
    },
@@ -9301,11 +9301,11 @@ def getPlayerData():
    "9753":{
       "player_id":"9753",
       "full_name":"Zach Charbonnet",
-      "last_name":"Charb onnet",
+      "last_name":"Charbonnet",
       "first_name":"Zach",
       "search_full_name":"zachcharbonnet",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40075,
       "position":"RB",
       "team":"SEA"
    },
@@ -10933,7 +10933,7 @@ def getPlayerData():
       "first_name":"Chigoziem",
       "search_full_name":"chigoziemokonkwo",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34099,
       "position":"TE",
       "team":"TEN"
    },
@@ -11593,7 +11593,7 @@ def getPlayerData():
       "first_name":"Zamir",
       "search_full_name":"zamirwhi te",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34078,
       "position":"RB",
       "team":"LV"
    },
@@ -14042,7 +14042,7 @@ def getPlayerData():
       "first_name":"C.J.",
       "search_full_name":"cjstroud",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40030,
       "position":"QB",
       "team":"HOU"
    },
@@ -14867,7 +14867,7 @@ def getPlayerData():
       "first_name":"Justyn",
       "search_full_name":"justynross",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34440,
       "position":"WR ",
       "team":"KC"
    },
@@ -17144,7 +17144,7 @@ def getPlayerData():
       "first_name":"Sam",
       "search_full_name":"samhowell",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34100,
       "position":"QB",
       "team":"WAS"
    },
@@ -17331,7 +17331,7 @@ def getPlayerData():
       "first_name":"Roschon",
       "search_full_name":"roschonjohnson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40162,
       "position":"RB",
       "team":"CHI"
    },
@@ -18834,7 +18834,7 @@ def getPlayerData():
       "first_name":"Najee",
       "search_full_name":"najeeharris",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33412,
       "position":"RB",
       "team":"PIT"
    },
@@ -20748,7 +20748,7 @@ def getPlayerData():
       "first_name":"Chuba",
       "search_full_name":"chubahubbard",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33514,
       "position":"RB",
       "team":"CAR"
    },
@@ -21261,7 +21261,7 @@ def getPlayerData():
       "first_name":"Jalin",
       "search_full_name":"jalinhyatt",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40128,
       "position":"WR",
       "team":"NYG"
    },
@@ -21536,7 +21536,7 @@ def getPlayerData():
       "first_name":"Skyy",
       "search_full_name":"skyymoore",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34009,
       "position":"WR",
       "team":"KC"
    },
@@ -23494,7 +23494,7 @@ def getPlayerData():
       "first_name":"Zay",
       "search_full_name":"zayflowers",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40039,
       "position":"WR",
       "team":"BAL"
    },
@@ -24627,7 +24627,7 @@ def getPlayerData():
       "first_name":"Chris",
       "search_full_name":"chrisolave",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33966,
       "position":"WR",
       "team":"NO"
    },
@@ -26808,7 +26808,7 @@ def getPlayerData():
       "first_name":"Quentin",
       "search_full_name":"quentinjohnston",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40051,
       "position":"WR",
       "team":"LAC"
    },
@@ -28453,7 +28453,7 @@ def getPlayerData():
    },
    "4726":{
       "player_id":"4726",
-      "full_name":"Nico Marl ey",
+      "full_name":"Nico Marley",
       "last_name":"Marley",
       "first_name":"Nico",
       "search_full_name":"nicomarley",
@@ -29063,7 +29063,7 @@ def getPlayerData():
       "first_name":"Chase",
       "search_full_name":"chasebrown",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40196,
       "position":"RB",
       "team":"CIN"
    },
@@ -30214,7 +30214,7 @@ def getPlayerData():
       "first_name":"Ty",
       "search_full_name":"tychandler",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34125,
       "position":"RB",
       "team":"MIN"
    },
@@ -30313,7 +30313,7 @@ def getPlayerData():
       "first_name":"Jaylen",
       "search_full_name":"jaylenwarren",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34447,
       "position":"RB",
       "team":"PIT"
    },
@@ -31314,7 +31314,7 @@ def getPlayerData():
       "first_name":"Pat",
       "search_full_name":"patfreiermuth",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33443,
       "position":"TE",
       "team":"PIT"
    },
@@ -31523,7 +31523,7 @@ def getPlayerData():
       "first_name":"Romeo",
       "search_full_name":"romeodoubs",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34088,
       "position":"WR",
       "team":"GB"
    },
@@ -31563,7 +31563,7 @@ def getPlayerData():
       "first_name":"Kyren",
       "search_full_name":"kyrenwilliams",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34120,
       "position":"RB",
       "team":"LAR"
    },
@@ -32179,7 +32179,7 @@ def getPlayerData():
       "first_name":"Rhamondre",
       "search_full_name":"rhamondrestevenson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33508,
       "position":"RB",
       "team":"NE"
    },
@@ -32476,7 +32476,7 @@ def getPlayerData():
       "first_name":"Joshua",
       "search_full_name":"joshuapalmer",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33465,
       "position":"WR",
       "team":"LAC "
    },
@@ -32487,7 +32487,7 @@ def getPlayerData():
       "first_name":"Kendre",
       "search_full_name":"kendremiller",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40108,
       "position":"RB",
       "team":"NO"
    },
@@ -33062,7 +33062,7 @@ def getPlayerData():
       "first_name":"Tank",
       "search_full_name":"tankbigsby",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40095,
       "position":"RB",
       "team":"JAX"
    },
@@ -35449,7 +35449,7 @@ def getPlayerData():
       "first_name":"Rashod",
       "search_full_name":"rashodbateman",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33415,
       "position":"WR",
       "team":"BAL"
    },
@@ -38641,12 +38641,12 @@ def getPlayerData():
    },
    "8159":{
       "player_id":"8159",
-      "full_name":"D esmond Ridder",
+      "full_name":"Desmond Ridder",
       "last_name":"Ridder",
       "first_name":"Desmond",
       "search_full_name":"desmondridder",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34030,
       "position":"QB",
       "team":"ATL"
    },
@@ -38921,7 +38921,7 @@ def getPlayerData():
       "first_name":"Tyjae",
       "search_full_name":"tyjaespears",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40119,
       "position":"RB",
       "team":"TEN"
    },
@@ -40186,7 +40186,7 @@ def getPlayerData():
       "first_name":"Travis",
       "search_full_name":"travisetienne",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33413,
       "position":"RB",
       "team":"JAX"
    },
@@ -40219,7 +40219,7 @@ def getPlayerData():
       "first_name":"Kenneth",
       "search_full_name":"kennethga inwell",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33538,
       "position":"RB",
       "team":"PHI"
    },
@@ -40390,7 +40390,7 @@ def getPlayerData():
    },
    "5614":{
       "player_id":"5614",
-      "full_name":"Nico F alah",
+      "full_name":"Nico Falah",
       "last_name":"Falah",
       "first_name":"Nico",
       "search_full_name":"nicofalah",
@@ -40472,7 +40472,7 @@ def getPlayerData():
       "first_name":"Deon",
       "search_full_name":"deonjackson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33798,
       "position":"RB",
       "team":"IND"
    },
@@ -43420,7 +43420,7 @@ def getPlayerData():
       "first_name":"Dameon",
       "search_full_name":"dameonpierce",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34063,
       "position":"RB",
       "team":"HOU"
    },
@@ -43893,7 +43893,7 @@ def getPlayerData():
       "first_name":"Luke",
       "search_full_name":"lukemusgrave",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40074,
       "position":"TE",
       "team":"GB"
    },
@@ -44850,7 +44850,7 @@ def getPlayerData():
       "first_name":"Amon-Ra",
       "search_full_name":"amonrastbrown",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33500,
       "position":"WR",
       "team":"DET"
    },
@@ -45367,7 +45367,7 @@ def getPlayerData():
       "first_name":"Dalton",
       "search_full_name":"daltonkincaid",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40048,
       "position":"TE",
       "team":"BUF"
    },
@@ -45444,7 +45444,7 @@ def getPlayerData():
       "first_name":"Kenneth",
       "search_full_name":"kennethwalker",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33996,
       "position":"RB",
       "team":"SEA"
    },
@@ -47204,7 +47204,7 @@ def getPlayerData():
       "first_name":"Brock",
       "search_full_name":"brockpurdy",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34218,
       "position":"QB",
       "team":"SF"
    },
@@ -50592,7 +50592,7 @@ def getPlayerData():
       "first_name":"Jameson",
       "search_full_name":"jameson williams",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33967,
       "position":"WR",
       "team":"DET"
    },
@@ -52839,7 +52839,7 @@ def getPlayerData():
       "first_name":"Jahmyr",
       "search_full_name":"jahmyrgibbs",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40059,
       "position":"RB",
       "team":"DET"
    },
@@ -54258,7 +54258,7 @@ def getPlayerData():
       "first_name":"Anthony",
       "search_full_name":"anthonyrichardson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40040,
       "position":"QB",
       "team":"IND"
    },
@@ -54885,7 +54885,7 @@ def getPlayerData():
       "first_name":"Drake",
       "search_full_name":"drakelondon",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33963,
       "position":"WR",
       "team":"ATL"
    },
@@ -56436,7 +56436,7 @@ def getPlayerData():
       "first_name":"DeVonta",
       "search_full_name":"devontasmith",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33398,
       "position":"WR",
       "team":"PHI"
    },
@@ -56458,7 +56458,7 @@ def getPlayerData():
       "first_name":"Bijan",
       "search_full_name":"bijanrobinson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40055,
       "position":"RB",
       "team":"AT L"
    },
@@ -57773,7 +57773,7 @@ def getPlayerData():
    },
    "2579":{
       "player_id":"2579",
-      "full_name":"Mi ke Hull",
+      "full_name":"Mike Hull",
       "last_name":"Hull",
       "first_name":"Mike",
       "search_full_name":"mikehull",
@@ -58368,7 +58368,7 @@ def getPlayerData():
       "first_name":"Marvin",
       "search_full_name":"marvinmims",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40090,
       "position":"WR",
       "team":"DEN"
    },
@@ -58401,7 +58401,7 @@ def getPlayerData():
       "first_name":"De'Von",
       "search_full_name":"devonachane",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40118,
       "position":"RB",
       "team":"MIA"
    },
@@ -58508,7 +58508,7 @@ def getPlayerData():
       "player_id":"JAX",
       "last_name":"Jaguars",
       "first_name":"Jacksonville",
-      "position":"D EF",
+      "position":"DEF",
       "team":"JAX"
    },
    "8777":{
@@ -58837,7 +58837,7 @@ def getPlayerData():
       "first_name":"Rashee",
       "search_full_name":"rasheerice",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40084,
       "position":"WR",
       "team":"KC"
    },
@@ -59200,7 +59200,7 @@ def getPlayerData():
       "first_name":"Keaontay",
       "search_full_name":"keaontayingram",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34157,
       "position":"RB",
       "team":"ARI"
    },
@@ -62199,7 +62199,7 @@ def getPlayerData():
       "first_name":"Chris",
       "search_full_name":"chrisrodriguez",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40231,
       "position":"RB",
       "team":"WAS"
    },
@@ -62514,7 +62514,7 @@ def getPlayerData():
       "first_name":"Jonathan",
       "search_full_name":"jonathanmingo",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40073,
       "position":"WR",
       "team":"CAR"
    },
@@ -63147,12 +63147,12 @@ def getPlayerData():
    },
    "8676":{
       "player_id":"8676",
-      "full_name":"R ashid Shaheed",
+      "full_name":"Rashid Shaheed",
       "last_name":"Shaheed",
       "first_name":"Rashid",
       "search_full_name":"rashidshaheed",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34659,
       "position":"WR",
       "team":"NO"
    },
@@ -65110,9 +65110,9 @@ def getPlayerData():
       "first_name":"Trevor",
       "search_full_name":"trevorlawrence",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33389,
       "position":"QB",
-      "team":"JA X"
+      "team":"JAX"
    },
    "3063":{
       "player_id":"3063",
@@ -66078,7 +66078,7 @@ def getPlayerData():
       "first_name":"Alec",
       "search_full_name":"alecpierce",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34008,
       "position":"WR",
       "team":"IND"
    },
@@ -68284,7 +68284,7 @@ def getPlayerData():
    },
    "8824":{
       "player_id":"8824",
-      "full_name":"Samson Nacu a",
+      "full_name":"Samson Nacua",
       "last_name":"Nacua",
       "first_name":"Samson",
       "search_full_name":"samsonnacua",
@@ -68300,7 +68300,7 @@ def getPlayerData():
       "first_name":"Justin",
       "search_full_name":"justinfields",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33399,
       "position":"QB",
       "team":"CHI"
    },
@@ -69484,7 +69484,7 @@ def getPlayerData():
       "first_name":"Kenny",
       "search_full_name":"kennypickett",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33975,
       "position":"QB",
       "team":"PIT"
    },
@@ -71026,12 +71026,12 @@ def getPlayerData():
    },
    "9493":{
       "player_id":"9493",
-      "full_name":"Puka Nacu a",
+      "full_name":"Puka Nacua",
       "last_name":"Nacua",
       "first_name":"Puka",
       "search_full_name":"pukanacua",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40168,
       "position":"WR",
       "team":"LAR"
    },
@@ -71449,7 +71449,7 @@ def getPlayerData():
       "first_name":"Jerome",
       "search_full_name":"jeromeford",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34112,
       "position":"RB",
       "team":"CLE"
    },
@@ -71895,12 +71895,12 @@ def getPlayerData():
    },
    "9220":{
       "player_id":"9220",
-      "full_name":"Eva n Hull",
+      "full_name":"Evan Hull",
       "last_name":"Hull",
       "first_name":"Evan",
       "search_full_name":"evanhull",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40169,
       "position":"RB",
       "team":"IND"
    },
@@ -74595,7 +74595,7 @@ def getPlayerData():
       "first_name":"Tyler",
       "search_full_name":"tylerallgeier",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34107,
       "position":"RB",
       "team":"ATL"
    },
@@ -74947,7 +74947,7 @@ def getPlayerData():
       "first_name":"Tutu",
       "search_full_name":"tutuatwell",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33445,
       "position":"WR",
       "team":"LAR"
    },
@@ -76985,7 +76985,7 @@ def getPlayerData():
       "first_name":"Keaton",
       "search_full_name":"keatonmitchell",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40641,
       "position":"RB",
       "team":"BAL"
    },
@@ -77161,7 +77161,7 @@ def getPlayerData():
       "first_name":"Garrett",
       "search_full_name":"garrettwilson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33965,
       "position":"WR",
       "team":"NYJ"
    },
@@ -77216,7 +77216,7 @@ def getPlayerData():
       "first_name":"Elijah",
       "search_full_name":"elijahmoore ",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33422,
       "position":"WR",
       "team":"CLE"
    },
@@ -77634,7 +77634,7 @@ def getPlayerData():
       "first_name":"Treylon",
       "search_full_name":"treylonburks",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33973,
       "position":"WR",
       "team":"TEN"
    },
@@ -77942,7 +77942,7 @@ def getPlayerData():
       "first_name":"George",
       "search_full_name":"georgepickens",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34007,
       "position":"WR",
       "team":"PIT"
    },
@@ -79038,7 +79038,7 @@ def getPlayerData():
       "first_name":"Bryce",
       "search_full_name":"bryceyoung",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40029,
       "position":"QB",
       "team":"CAR"
    },
@@ -79401,7 +79401,7 @@ def getPlayerData():
       "first_name":"Nico",
       "search_full_name":"nicocol lins",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33477,
       "position":"WR",
       "team":"HOU"
    },
@@ -81662,12 +81662,12 @@ def getPlayerData():
    },
    "8167":{
       "player_id":"8167",
-      "full_name":"Christian Wat son",
+      "full_name":"Christian Watson",
       "last_name":"Watson",
       "first_name":"Christian",
       "search_full_name":"christianwatson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33989,
       "position":"WR",
       "team":"GB"
    },
@@ -81689,7 +81689,7 @@ def getPlayerData():
       "first_name":"Michael",
       "search_full_name":"michaelcarter",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33495,
       "position":"RB",
       "team":"NYJ"
    },
@@ -81700,7 +81700,7 @@ def getPlayerData():
       "first_name":"Sean",
       "search_full_name":"seantucker",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40742,
       "position":"R B",
       "team":"TB"
    },
@@ -83856,7 +83856,7 @@ def getPlayerData():
       "first_name":"Jake",
       "search_full_name":"jakemoody",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40129,
       "position":"K",
       "team":"SF"
    },
@@ -86041,7 +86041,7 @@ def getPlayerData():
       "first_name":"Sam",
       "search_full_name":"samlaporta",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40064,
       "position":"TE",
       "team":"DET"
    },
@@ -86756,7 +86756,7 @@ def getPlayerData():
       "first_name":"Evan",
       "search_full_name":"evanmcpherson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33537,
       "position":"K",
       "team":"CIN"
    },
@@ -87192,7 +87192,7 @@ def getPlayerData():
       "first_name":"Ja'Marr",
       "search_full_name":"jamarrchase",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33393,
       "position":"WR",
       "team":"CIN"
    },
@@ -88944,7 +88944,7 @@ def getPlayerData():
       "first_name":"Jake",
       "search_full_name":"jakeferguson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34085,
       "position":"TE",
       "team":"DAL"
    },
@@ -89109,7 +89109,7 @@ def getPlayerData():
       "first_name":"Isiah",
       "search_full_name":"isiahpacheco",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34207,
       "position":"RB",
       "team":"KC"
    },
@@ -89307,7 +89307,7 @@ def getPlayerData():
       "first_name":"Cameron",
       "search_full_name":"camerondicker",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34344,
       "position":"K",
       "team":"LAC"
    },
@@ -91983,7 +91983,7 @@ def getPlayerData():
       "first_name":"Michael",
       "search_full_name":"michaelwilson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40121,
       "position":"WR",
       "team":"ARI"
    },
@@ -93204,7 +93204,7 @@ def getPlayerData():
       "first_name":"Brian",
       "search_full_name":"brianrobinson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34054,
       "position":"RB",
       "team":"WAS"
    },
@@ -93721,7 +93721,7 @@ def getPlayerData():
       "first_name":"Elijah",
       "search_full_name":"elijahmitchell",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33582,
       "position":"RB",
       "team":"SF"
    },
@@ -93754,7 +93754,7 @@ def getPlayerData():
       "first_name":"Zach",
       "search_full_name":" zachwilson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33390,
       "position":"QB",
       "team":"NYJ"
    },
@@ -94645,7 +94645,7 @@ def getPlayerData():
       "first_name":"Rondale",
       "search_full_name":"rondalem oore",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33437,
       "position":"WR",
       "team":"ARI"
    },
@@ -96819,7 +96819,7 @@ def getPlayerData():
       "first_name":"Jaylen",
       "search_full_name":"jaylenwaddle",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33394,
       "position":"WR",
       "team":"MIA"
    },
@@ -96907,7 +96907,7 @@ def getPlayerData():
       "first_name":"Jaxon",
       "search_full_name":"jaxonsmithnjigba",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40041,
       "position":"WR",
       "team":"SEA"
    },
@@ -97246,9 +97246,9 @@ def getPlayerData():
       "full_name":"Khalil Herbert",
       "last_name":"Herbert",
       "first_name":"Khalil",
-      "search_full_name":"k halilherbert",
+      "search_full_name":"khalilherbert",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33605,
       "position":"RB",
       "team":"CHI"
    },
@@ -98337,7 +98337,7 @@ def getPlayerData():
       "first_name":"Kadarius",
       "search_full_name":"kadariustoney",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33408,
       "position":"WR",
       "team":"KC"
    },
@@ -98414,7 +98414,7 @@ def getPlayerData():
       "first_name":"Chris",
       "search_full_name":"chrisevans",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33590,
       "position":"RB",
       "team":"CIN"
    },
@@ -98975,7 +98975,7 @@ def getPlayerData():
       "first_name":"Jayden",
       "search_full_name":"jaydenreed",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40063,
       "position":"WR",
       "team":"GB"
    },
@@ -99613,7 +99613,7 @@ def getPlayerData():
       "first_name":"Rachaad",
       "search_full_name":"rachaadwhite",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34047,
       "position":"RB",
       "team":"TB"
    },
@@ -100290,12 +100290,12 @@ def getPlayerData():
    },
    "8119":{
       "player_id":"8119",
-      "full_name":"Jaha n Dotson",
+      "full_name":"Jahan Dotson",
       "last_name":"Dotson",
       "first_name":"Jahan",
       "search_full_name":"jahandotson",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33971,
       "position":"WR",
       "team":"WAS"
    },
@@ -100581,7 +100581,7 @@ def getPlayerData():
       "first_name":"James",
       "search_full_name":"jamescook",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34019,
       "position":"RB",
       "team":"BUF"
    },
@@ -100930,7 +100930,7 @@ def getPlayerData():
       "player_id":"4634",
       "full_name":"Kenneth Walker",
       "last_name":"Walker",
-      "first_name":"Kennet h",
+      "first_name":"Kenneth",
       "search_full_name":"kennethwalker",
       "espn_id":2971595,
       "yahoo_id":30407,
@@ -102707,7 +102707,7 @@ def getPlayerData():
       "first_name":"Pierre",
       "search_full_name":"pierrestrong",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":34083,
       "position":"RB",
       "team":"CLE"
    },
@@ -104555,7 +104555,7 @@ def getPlayerData():
       "first_name":"Kyle",
       "search_full_name":"kylepitts",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":33392,
       "position":"TE",
       "team":"ATL"
    },
@@ -105435,7 +105435,7 @@ def getPlayerData():
       "first_name":"Jaleel",
       "search_full_name":"jaleelmclaughlin",
       "espn_id":None,
-      "yahoo_id":None,
+      "yahoo_id":40696,
       "position":"RB",
       "team":"DEN"
    },
