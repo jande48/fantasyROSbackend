@@ -52,10 +52,10 @@ class SendMessage(APIView):
                 },
                 status=status.HTTP_200_OK,
             )
-        except:
+        except Exception as e:
             return Response(
                 {
-                    "message": "failure",
+                    "message": f"failure {e}",
                 },
                 status=status.HTTP_200_OK,
             )
