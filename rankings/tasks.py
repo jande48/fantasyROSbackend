@@ -101,6 +101,8 @@ def updateRankings(URL, league_scoring_type):
                         player_obj.sleeper_id = str(
                             sleeper_player_data[key]["player_id"]
                         )
+                if p["player_name"] == "Dak Prescott":
+                    player_obj.sleeper_id = "3294"
             player_obj.save()
         print(f"updated {league_scoring_type} rankings")
 
