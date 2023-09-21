@@ -86,10 +86,10 @@ DATABASES = {
 
 CRONJOBS = [
     (
-        "0 */6 * * *",
+        "*/5 * * * *",
         "rankings.tasks.updateAllRankings",
         [],
-        {},
+        {"verbose": 0},
     ),
 ]
 # Password validation
