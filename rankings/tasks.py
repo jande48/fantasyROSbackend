@@ -110,6 +110,7 @@ def updateRankings(URL, league_scoring_type):
 
 
 def updateAllRankings():
+    PlayerRank.objects.all().delete()
     ppr_url = "https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php"
     updateRankings(ppr_url, "ppr")
     half_url = "https://www.fantasypros.com/nfl/rankings/ros-half-point-ppr-overall.php"

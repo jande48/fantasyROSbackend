@@ -86,7 +86,7 @@ DATABASES = {
 
 CRONJOBS = [
     (
-        "*/5 * * * *",
+        "0 */6 * * *",
         "rankings.tasks.updateAllRankings",
         [],
         {"verbose": 0},
