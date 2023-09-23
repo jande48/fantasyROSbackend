@@ -83,15 +83,18 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
 CRONJOBS = [
-    (
-        "0 */6 * * *",
-        "rankings.tasks.updateAllRankings",
-        [],
-        {"verbose": 0},
-    ),
+    ("*/3 * * * *", "rankings.tasks.updateAllRankings"),
 ]
+
+# CRONJOBS = [
+#     (
+#         "0 */6 * * *",
+#         "rankings.tasks.updateAllRankings",
+#         [],
+#         {"verbose": 0},
+#     ),
+# ]
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
