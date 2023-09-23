@@ -84,7 +84,7 @@ DATABASES = {
     }
 }
 CRONJOBS = [
-    ("*/3 * * * *", "rankings.tasks.updateAllRankings"),
+    ("0 */4 * * *", "rankings.tasks.updateAllRankings"),
 ]
 
 # CRONJOBS = [
