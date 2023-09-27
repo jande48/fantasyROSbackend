@@ -6,7 +6,7 @@ from rankings.models import PlayerRank
 from rankings.utils import getPlayerData
 
 
-def updateRankings(URL, league_scoring_type):
+def updateRankings(URL, league_scoring_type, ranking_timescale):
     with urllib.request.urlopen(URL) as web:
         soup = BeautifulSoup(web.read(), "lxml")
         pattern = re.compile('var ecrData = (.*?);(?=[^"]*(?:(?:"[^"]*){2})*$)')
@@ -68,6 +68,7 @@ def updateRankings(URL, league_scoring_type):
                 fantasy_pros_id=p["player_id"],
                 league_scoring_type=league_scoring_type,
                 source="fantasy_pros",
+                ranking_timescale=ranking_timescale,
             )
             player_obj.rank = i + 1
             player_obj.full_name = p["player_name"]
@@ -111,9 +112,35 @@ def updateRankings(URL, league_scoring_type):
 
 def updateAllRankings():
     PlayerRank.objects.all().delete()
-    ppr_url = "https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php"
-    updateRankings(ppr_url, "ppr")
-    half_url = "https://www.fantasypros.com/nfl/rankings/ros-half-point-ppr-overall.php"
-    updateRankings(half_url, "half")
-    std_url = "https://www.fantasypros.com/nfl/rankings/ros-overall.php"
-    updateRankings(std_url, "std")
+
+    # Rest of Season
+    ppr_ros_url = "https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php"
+    updateRankings(ppr_ros_url, "ppr", "ROS")
+    half_ros_url = (
+        "https://www.fantasypros.com/nfl/rankings/ros-half-point-ppr-overall.php"
+    )
+    updateRankings(half_ros_url, "half", "ROS")
+    std_ros_url = "https://www.fantasypros.com/nfl/rankings/ros-overall.php"
+    updateRankings(std_ros_url, "std", "ROS")
+
+    # Weekly Superflex
+    ppr_weekly_superflex_url = (
+        "https://www.fantasypros.com/nfl/rankings/ppr-superflex.php"
+    )
+    updateRankings(ppr_weekly_superflex_url, "ppr", "weekly")
+    std_weekly_superflex_url = "https://www.fantasypros.com/nfl/rankings/superflex.php"
+    updateRankings(std_weekly_superflex_url, "ppr", "weekly")
+    half_weekly_superflex_url = (
+        "https://www.fantasypros.com/nfl/rankings/half-point-ppr-superflex.php"
+    )
+    updateRankings(half_weekly_superflex_url, "ppr", "weekly")
+
+    # Weekly DEF & K
+    ppr_weekly_k_url="https://www.fantasypros.com/nfl/rankings/k.php"
+    updateRankings(ppr_weekly_k_url, "ppr", "weekly")
+    updateRankings(ppr_weekly_k_url, "std", "weekly")
+    updateRankings(ppr_weekly_k_url, "half", "weekly")
+    ppr_weekly_def_url = "https://www.fantasypros.com/nfl/rankings/dst.php"
+    updateRankings(ppr_weekly_def_url, "ppr", "weekly")
+    updateRankings(ppr_weekly_def_url, "std", "weekly")
+    updateRankings(ppr_weekly_def_url, "half", "weekly")

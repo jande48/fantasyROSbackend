@@ -35,6 +35,7 @@ class PlayerRank(models.Model):
     player_yahoo_id = TextField(null=True, blank=True)
     player_bye_week = TextField(null=True, blank=True)
     sleeper_id = TextField(null=True, blank=True)
+    ranking_timescale = TextField(null=True, blank=True)
 
     def save(self, *args, **kwargs):
         date = datetime.now(tz=pytz.utc)

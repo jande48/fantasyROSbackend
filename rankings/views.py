@@ -21,14 +21,20 @@ from rankings.models import PlayerRank, Messages
 
 
 class GetRankingsView(APIView):
-    def get(self, request, league_scoring_type=None, source=None):
+    def get(
+        self, request, league_scoring_type=None, source=None, ranking_timescale=None
+    ):
         if not league_scoring_type or not source:
             return Response(
                 {"message": "need league type and source"},
                 status=status.HTTP_403_FORBIDDEN,
             )
+        if not ranking_timescale:
+            ranking_timescale = "ROS"
         players = PlayerRank.objects.filter(
-            league_scoring_type=league_scoring_type, source=source
+            league_scoring_type=league_scoring_type,
+            source=source,
+            ranking_timescale=ranking_timescale,
         ).order_by("rank")
         return Response(
             {

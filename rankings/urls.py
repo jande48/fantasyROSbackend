@@ -8,6 +8,10 @@ urlpatterns = [
         GetRankingsView.as_view(),
     ),
     path(
+        "get_rankings/<str:league_scoring_type>/<str:source>/<str:ranking_timescale>/",
+        GetRankingsView.as_view(),
+    ),
+    path(
         "send_message/",
         SendMessage.as_view(),
     ),
