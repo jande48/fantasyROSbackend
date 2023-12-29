@@ -73,14 +73,12 @@ class ChooseVote(APIView):
             )
         player.vote = vote_choice
         player.save()
-        num_of_ja_votes = Player.objects.filter(game__code=game_code, vote="ja").count()
-        num_of_nein_votes = Player.objects.filter(
-            game__code=game_code, vote="nein"
-        ).count()
+        ja_players = Player.objects.filter(game__code=game_code, vote="ja")
+        nein_players = Player.objects.filter(game__code=game_code, vote="nein")
         return Response(
             {
-                "num_of_ja_votes": num_of_ja_votes,
-                "num_of_nein_votes": num_of_nein_votes,
+                "ja_players": PlayerSerializer(ja_players, many=True).data,
+                "nein_players": PlayerSerializer(nein_players, many=True).data,
             },
             status=status.HTTP_200_OK,
         )
