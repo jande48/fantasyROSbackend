@@ -22,12 +22,19 @@ class GetGameStatus(APIView):
 
         ja_players = Player.objects.filter(game__code=game_code, vote="ja")
         nein_players = Player.objects.filter(game__code=game_code, vote="nein")
+        other_players = (
+            Player.objects.filter(game__code=game_code)
+            .exclude(pk__in=list(ja_players.values_list("pk", flat=True)))
+            .exclude(pk__in=list(nein_players.values_list("pk", flat=True)))
+        )
+
         player = Player.objects.get(name=player_name, game__code=game_code)
         return Response(
             {
                 "player": PlayerSerializer(player).data,
                 "ja_players": PlayerSerializer(ja_players, many=True).data,
                 "nein_players": PlayerSerializer(nein_players, many=True).data,
+                "other_players": PlayerSerializer(other_players, many=True).data,
             },
             status=status.HTTP_200_OK,
         )
@@ -75,10 +82,16 @@ class ChooseVote(APIView):
         player.save()
         ja_players = Player.objects.filter(game__code=game_code, vote="ja")
         nein_players = Player.objects.filter(game__code=game_code, vote="nein")
+        other_players = (
+            Player.objects.filter(game__code=game_code)
+            .exclude(pk__in=list(ja_players.values_list("pk", flat=True)))
+            .exclude(pk__in=list(nein_players.values_list("pk", flat=True)))
+        )
         return Response(
             {
                 "ja_players": PlayerSerializer(ja_players, many=True).data,
                 "nein_players": PlayerSerializer(nein_players, many=True).data,
+                "other_players": PlayerSerializer(other_players, many=True).data,
             },
             status=status.HTTP_200_OK,
         )
