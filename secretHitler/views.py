@@ -19,7 +19,18 @@ class GetGameStatus(APIView):
                 {"message": "need game code and player name"},
                 status=status.HTTP_403_FORBIDDEN,
             )
-
+        try:
+            player = Player.objects.get(name=player_name, game__code=game_code)
+        except:
+            return Response(
+                {
+                    "player": None,
+                    "ja_players": [],
+                    "nein_players": [],
+                    "other_players": [],
+                },
+                status=status.HTTP_200_OK,
+            )
         ja_players = Player.objects.filter(game__code=game_code, vote="ja")
         nein_players = Player.objects.filter(game__code=game_code, vote="nein")
         other_players = (
@@ -28,7 +39,6 @@ class GetGameStatus(APIView):
             .exclude(pk__in=list(nein_players.values_list("pk", flat=True)))
         )
 
-        player = Player.objects.get(name=player_name, game__code=game_code)
         return Response(
             {
                 "player": PlayerSerializer(player).data,
@@ -36,6 +46,23 @@ class GetGameStatus(APIView):
                 "nein_players": PlayerSerializer(nein_players, many=True).data,
                 "other_players": PlayerSerializer(other_players, many=True).data,
             },
+            status=status.HTTP_200_OK,
+        )
+
+    def delete(
+        self,
+        request,
+        game_code=None,
+        player_name=None,
+    ):
+        if not game_code or not player_name:
+            return Response(
+                {"message": "need game code and player name"},
+                status=status.HTTP_403_FORBIDDEN,
+            )
+        Player.objects.filter(game__code=game_code, name=player_name).delete()
+        return Response(
+            {},
             status=status.HTTP_200_OK,
         )
 
