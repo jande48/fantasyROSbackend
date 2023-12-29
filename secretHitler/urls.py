@@ -1,5 +1,11 @@
 from django.urls import path
-from secretHitler.views import GetGameStatus, ResetVotes, ChooseVote, ResetRoles, CreateGame
+from secretHitler.views import (
+    GetGameStatus,
+    ResetVotes,
+    ChooseVote,
+    ResetRoles,
+    CreateGame,
+)
 
 
 urlpatterns = [
@@ -12,7 +18,7 @@ urlpatterns = [
         ResetVotes.as_view(),
     ),
     path(
-        "vote/<str:game_code>/<str:player_name>/<str:vote_choice/",
+        "vote/<str:game_code>/<str:player_name>/<str:vote_choice>/",
         ChooseVote.as_view(),
     ),
     path(

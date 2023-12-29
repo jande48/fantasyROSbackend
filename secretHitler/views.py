@@ -20,16 +20,14 @@ class GetGameStatus(APIView):
                 status=status.HTTP_403_FORBIDDEN,
             )
 
-        num_of_ja_votes = Player.objects.filter(game__code=game_code, vote="ja").count()
-        num_of_nein_votes = Player.objects.filter(
-            game__code=game_code, vote="nein"
-        ).count()
-        player = Player.objects.get(player_name=player_name, game__code=game_code)
+        ja_players = Player.objects.filter(game__code=game_code, vote="ja")
+        nein_players = Player.objects.filter(game__code=game_code, vote="nein")
+        player = Player.objects.get(name=player_name, game__code=game_code)
         return Response(
             {
                 "player": PlayerSerializer(player).data,
-                "num_of_ja_votes": num_of_ja_votes,
-                "num_of_nein_votes": num_of_nein_votes,
+                "ja_players": PlayerSerializer(ja_players, many=True).data,
+                "nein_players": PlayerSerializer(nein_players, many=True).data,
             },
             status=status.HTTP_200_OK,
         )
@@ -67,7 +65,7 @@ class ChooseVote(APIView):
             )
 
         try:
-            player = Player.objects.get(player_name=player_name, game__code=game_code)
+            player = Player.objects.get(name=player_name, game__code=game_code)
         except:
             return Response(
                 {"message": "could not find the player with that name and code"},
@@ -104,13 +102,13 @@ class ResetRoles(APIView):
                 status=status.HTTP_403_FORBIDDEN,
             )
 
-        num_of_liberals, num_of_fascists = game.getNumOfLiberalsFascists
+        num_of_liberals, num_of_fascists = game.getNumOfLiberalsFascists()
         players = Player.objects.filter(game=game)
 
         players_obj = [{"pk": p.pk, "rando": random.random()} for p in players]
         players_sorted = sorted(players_obj, key=lambda x: x["rando"])
         for index, player_pk_num in enumerate(players_sorted):
-            player = Player.objects.get(pk=player_pk_num["pk"])
+            player = Player.objects.filter(pk=player_pk_num["pk"])
             if index == 0:
                 player.update(role="hitler", party="fascist")
             elif index <= num_of_liberals:
@@ -118,7 +116,7 @@ class ResetRoles(APIView):
             else:
                 player.update(role="fascist", party="fascist")
 
-        og_player = Player.objects.get(player_name=player_name, game=game)
+        og_player = Player.objects.get(name=player_name, game=game)
         return Response(
             {
                 "role": og_player.role,
@@ -136,8 +134,8 @@ class CreateGame(APIView):
                 status=status.HTTP_403_FORBIDDEN,
             )
 
-        game = Game.objects.create()
-        player = Player.objects.create(game=game, player_name=player_name)
+        game = Game.objects.create(num_of_players=num_of_players)
+        player = Player.objects.create(game=game, name=player_name.strip())
 
         return Response(
             {"role": player.role, "party": player.party, "game_code": game.code},

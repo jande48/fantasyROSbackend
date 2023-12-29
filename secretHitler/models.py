@@ -27,17 +27,17 @@ class Game(models.Model):
     num_of_players = TextField(null=True, blank=True)
 
     def getNumOfLiberalsFascists(self):
-        if self.num_of_players == 5:
+        if self.num_of_players == "5":
             return 3, 1
-        if self.num_of_players == 6:
+        if self.num_of_players == "6":
             return 4, 1
-        if self.num_of_players == 7:
+        if self.num_of_players == "7":
             return 4, 2
-        if self.num_of_players == 8:
+        if self.num_of_players == "8":
             return 5, 2
-        if self.num_of_players == 9:
+        if self.num_of_players == "9":
             return 5, 3
-        if self.num_of_players == 0:
+        if self.num_of_players == "0":
             return 6, 3
         return 0, 0
 
@@ -102,22 +102,20 @@ class Player(models.Model):
                 .exclude(role="hitler")
                 .count()
             )
-            num_of_hilter = 1 - Player.objects.filter(role='hitler').count()
+            num_of_hilter = 1 - Player.objects.filter(role="hitler").count()
 
             player_obj = []
             for x in range(num_of_liberals):
-                player_obj.append('liberal')
+                player_obj.append("liberal")
             for x in range(num_of_fascists):
-                player_obj.append('fascist')
+                player_obj.append("fascist")
             for x in range(num_of_hilter):
-                player_obj.append('hitler')
-            
+                player_obj.append("hitler")
             self.role = random.choice(player_obj)
-            if self.role == 'hitler':
-                self.party = 'fascist'
+            if self.role == "hitler":
+                self.party = "fascist"
             else:
                 self.party = self.role
-            
 
         super(Player, self).save(*args, **kwargs)
 
