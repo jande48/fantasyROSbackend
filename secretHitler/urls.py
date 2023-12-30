@@ -5,6 +5,7 @@ from secretHitler.views import (
     ChooseVote,
     ResetRoles,
     CreateGame,
+    JoinGame,
 )
 
 
@@ -28,5 +29,9 @@ urlpatterns = [
     path(
         "create-game/<str:num_of_players>/<str:player_name>/",
         CreateGame.as_view(),
+    ),
+    path(
+        "join-game/<str:game_code>/<str:player_name>/",
+        JoinGame.as_view(),
     ),
 ]

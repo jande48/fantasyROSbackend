@@ -179,3 +179,19 @@ class CreateGame(APIView):
             {"role": player.role, "party": player.party, "game_code": game.code},
             status=status.HTTP_200_OK,
         )
+class JoinGame(APIView):
+    def get(self, request, game_code=None, player_name=None):
+        if not game_code or not player_name:
+            return Response(
+                {"message": "need game code and player name"},
+                status=status.HTTP_403_FORBIDDEN,
+            )
+
+        game = Game.objects.get(code=game_code)
+        player = Player.objects.create(game=game, name=player_name.strip())
+
+        return Response(
+            {"role": player.role, "party": player.party, "game_code": game.code},
+            status=status.HTTP_200_OK,
+        )
+
